@@ -1,14 +1,16 @@
 import React from "react";
-
-import { Switch, Route } from "react-router";
-import SignIn from "./SignIn";
+import { Col, Grid, Row } from 'rsuite'
+import Sidebar from "../components/Sidebar";
 
 function Home() {
-    return <Switch>
-        <Route>
-            <SignIn />
-        </Route>
-    </Switch>
+    return <Grid fluid className="h-100">
+        <Row>
+            <Col xs = {24} md = {8} >
+                <Sidebar />
+            </Col>
+        </Row>
+
+    </Grid>
 }
 
 export default Home;
